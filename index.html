@@ -49,6 +49,12 @@
                 <p>
                     Ele repositorio corresponde a la base de datos donde se almacena los cambios en formaro <strong>BLOB(Binary Object File)</strong> y es el lugar al que pademos acceder cada vez que necesitemos revisar algun estado anterior de nuestro proyecto. Esto es posible gracias a los <em>commit</em>
                 </p>
+                <ul class="list">
+                    <li><strong>git commit</strong> Abre el editor predeterminadi para generar una confirmacion de cambios, podemos utilizar comandos como <em>git commit -am "msg"</em> para agregar los cambios de los archivos con seguimiento al INDEX y generar un mensaje de commit</li>
+                    <li><strong>git diff &lt;commit></strong> compara el working directory con la referencia especificado, esta puede ser relativa ej: <em>HEAD^(ancestro) o HEAD~2(anteriores)</em> o absoluta utilizando el numero de HASH</li>
+                    <li><strong>git blame &lt;fiel></strong> Muestra el archivo seleccionado con el usuario, fecha y hora en las que se realizaron modificaciones en el mismo. En caso de haber cambios sin confirmacion muestra la leyenda <em>not commited yet</em></li>
+                    <li><strong>git checkot &lt;commit></strong> Permite que navegemos en el historial de cambios para ver las versiones de nustro proyecto</li>
+                </ul>
             </article>
         </section>
     </header>
